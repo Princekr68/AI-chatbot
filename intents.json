@@ -1,0 +1,367 @@
+{
+  "intents": [
+    {
+      "intent": "greeting",
+      "en": {
+        "patterns": ["hi", "hello", "hey", "hey there", "hii", "hiii", "hello there", "good morning", "good afternoon", "good evening"],
+        "responses": ["Hello! How can I help you?", "Hi! What can I do for you?", "Hey there! Ask me anything."]
+      },
+      "hi": {
+        "patterns": ["namaste", "namaskar", "pranam", "ram ram", "suprabhat", "shubh sandhya"],
+        "responses": ["Namaste! Main aapki kya madad kar sakta hoon?", "Namaskar! Aap kuch bhi pooch sakte hain."]
+      }
+    },
+    {
+      "intent": "how_are_you",
+      "en": {
+        "patterns": ["how are you", "how are you doing", "how is it going", "whats up", "what's up", "are you fine"],
+        "responses": ["I'm doing great! How about you?", "All good here! How are you?"]
+      },
+      "hi": {
+        "patterns": ["kaise ho", "aap kaise ho", "tum kaise ho", "kya haal hai", "kya haal chaal hai", "sab theek hai", "kaisa chal raha hai"],
+        "responses": ["Main bilkul theek hoon! Aap batao, aap kaise ho?", "Sab badhiya hai! Aapka kya haal hai?"]
+      }
+    },
+    {
+      "intent": "user_fine",
+      "en": {
+        "patterns": ["i am fine", "i'm fine", "i am good", "i'm good", "i am great", "doing well", "all good"],
+        "responses": ["Glad to hear that! 😊", "That's great! How can I help you?"]
+      },
+      "hi": {
+        "patterns": ["main theek hoon", "mai theek hu", "main badhiya hoon", "mai badhiya hu", "sab badhiya", "main mast hoon"],
+        "responses": ["Ye sunkar achha laga! 😊", "Bahut badhiya! Bataiye, main kya madad karun?"]
+      }
+    },
+    {
+      "intent": "user_sad",
+      "en": {
+        "patterns": ["i am sad", "i'm sad", "i feel sad", "i am upset", "i feel low", "i am not feeling well"],
+        "responses": ["I'm sorry you feel that way. Take a deep breath, things will get better.", "Hang in there. Talking to someone you trust can really help."]
+      },
+      "hi": {
+        "patterns": ["main udaas hoon", "mai udaas hu", "mujhe bura lag raha hai", "mera mood kharab hai", "mann achha nahi hai"],
+        "responses": ["Mujhe khed hai. Gehri saans lo, sab theek ho jayega.", "Himmat rakho. Kisi apne se baat karoge toh achha lagega."]
+      }
+    },
+    {
+      "intent": "bot_identity",
+      "en": {
+        "patterns": ["what is your name", "what's your name", "your name", "who are you", "what are you", "are you a bot", "are you human", "are you an ai"],
+        "responses": ["I am a rule-based chatbot built as an AI project.", "I'm a simple chatbot that answers using predefined rules."]
+      },
+      "hi": {
+        "patterns": ["tumhara naam kya hai", "aapka naam kya hai", "tumhara naam batao", "tum kaun ho", "aap kaun ho", "kya tum bot ho", "kya tum insaan ho"],
+        "responses": ["Main ek rule-based chatbot hoon, jo AI project ke liye banaya gaya hai.", "Main ek chhota sa chatbot hoon jo predefined rules se jawab deta hai."]
+      }
+    },
+    {
+      "intent": "creator",
+      "en": {
+        "patterns": ["who created you", "who made you", "who built you", "who developed you", "who is your creator"],
+        "responses": ["I was created as part of an AI internship project."]
+      },
+      "hi": {
+        "patterns": ["tumhe kisne banaya", "tumko kisne banaya", "aapko kisne banaya", "tumhara creator kaun hai", "tumhe kisne develop kiya"],
+        "responses": ["Mujhe ek AI internship project ke roop mein banaya gaya hai."]
+      }
+    },
+    {
+      "intent": "help",
+      "en": {
+        "patterns": ["help", "help me", "can you help me", "what can you do", "how can you help me"],
+        "responses": ["I can chat with you and answer basic general knowledge and AI questions.", "Ask me about AI, Python, science, India, or just chat!"]
+      },
+      "hi": {
+        "patterns": ["madad karo", "meri madad karo", "mujhe help chahiye", "tum kya kar sakte ho", "aap kya kar sakte ho"],
+        "responses": ["Main aapse baat kar sakta hoon aur basic GK aur AI ke sawalon ke jawab de sakta hoon.", "AI, Python, science, India ke baare mein pooch sakte ho ya bas baat kar sakte ho!"]
+      }
+    },
+    {
+      "intent": "thanks",
+      "en": {
+        "patterns": ["thanks", "thank you", "thankyou", "thanks a lot", "thank you so much"],
+        "responses": ["You're welcome!", "Happy to help! 😊", "Anytime!"]
+      },
+      "hi": {
+        "patterns": ["shukriya", "dhanyavad", "bahut shukriya", "bahut dhanyavad", "aapka shukriya"],
+        "responses": ["Koi baat nahi!", "Aapki madad karke khushi hui! 😊"]
+      }
+    },
+    {
+      "intent": "sorry",
+      "en": {
+        "patterns": ["sorry", "i am sorry", "my bad", "apologies"],
+        "responses": ["No problem at all!", "It's okay, no worries."]
+      },
+      "hi": {
+        "patterns": ["maaf karna", "maaf kijiye", "sorry yaar", "galti ho gayi"],
+        "responses": ["Koi baat nahi!", "Theek hai, tension mat lo."]
+      }
+    },
+    {
+      "intent": "compliment",
+      "en": {
+        "patterns": ["you are smart", "you are great", "good bot", "nice bot", "well done", "you are awesome"],
+        "responses": ["Thank you! That means a lot. 😊", "Thanks! I try my best."]
+      },
+      "hi": {
+        "patterns": ["tum bahut smart ho", "tum badhiya ho", "bahut achhe ho", "shabash", "wah kya baat hai"],
+        "responses": ["Shukriya! Aapne mera din bana diya. 😊", "Dhanyavad! Main poori koshish karta hoon."]
+      }
+    },
+    {
+      "intent": "joke",
+      "en": {
+        "patterns": ["tell me a joke", "joke", "say something funny", "make me laugh", "another joke"],
+        "responses": ["Why do programmers prefer dark mode? Because light attracts bugs! 🐛", "Why did the computer get cold? It left its Windows open! 🪟"]
+      },
+      "hi": {
+        "patterns": ["ek joke sunao", "joke sunao", "koi joke batao", "hansao mujhe", "koi funny baat batao"],
+        "responses": ["Programmer ko coffee kyun pasand hai? Kyunki Java ke bina code nahi chalta! ☕", "Bug kya hai? Ek feature jo documentation mein nahi hai! 🐛"]
+      }
+    },
+    {
+      "intent": "motivation",
+      "en": {
+        "patterns": ["motivate me", "give me motivation", "i need motivation", "inspire me", "i feel demotivated"],
+        "responses": ["Small progress every day adds up to big results. Keep going!", "Don't give up. Every expert was once a beginner."]
+      },
+      "hi": {
+        "patterns": ["mujhe motivate karo", "motivation do", "mujhe motivation chahiye", "kuch motivational bolo", "main demotivated hoon"],
+        "responses": ["Roz thoda thoda improve karo, ek din bada result milega!", "Haar mat mano. Har expert kabhi beginner tha."]
+      }
+    },
+    {
+      "intent": "goodbye",
+      "en": {
+        "patterns": ["bye", "goodbye", "see you", "see you later", "take care", "exit", "quit", "bye bye", "good night"],
+        "responses": ["Goodbye! Have a great day!", "Bye! See you soon.", "Take care!"]
+      },
+      "hi": {
+        "patterns": ["alvida", "phir milte hain", "chalo bye", "main ja raha hoon", "mujhe jaana hai", "shubh ratri"],
+        "responses": ["Alvida! Aapka din shubh ho.", "Phir milte hain! Apna dhyan rakhna."]
+      }
+    },
+    {
+      "intent": "ai",
+      "en": {
+        "patterns": ["what is ai", "what is artificial intelligence", "explain ai", "define ai", "tell me about ai"],
+        "responses": ["Artificial Intelligence (AI) enables machines to perform tasks that normally need human intelligence, like learning and decision-making."]
+      },
+      "hi": {
+        "patterns": ["ai kya hai", "artificial intelligence kya hai", "ai ko explain karo", "ai ka matlab kya hai"],
+        "responses": ["AI (Artificial Intelligence) machines ko insaan jaisa sochna, seekhna aur faisle lena sikhata hai."]
+      }
+    },
+    {
+      "intent": "machine_learning",
+      "en": {
+        "patterns": ["what is machine learning", "what is ml", "explain machine learning", "define machine learning"],
+        "responses": ["Machine Learning is a branch of AI where computers learn patterns from data and improve without being explicitly programmed."]
+      },
+      "hi": {
+        "patterns": ["machine learning kya hai", "ml kya hai", "machine learning explain karo", "ml ka matlab kya hai"],
+        "responses": ["Machine Learning AI ki branch hai jisme computer data se patterns seekhta hai aur bina explicit programming ke behtar hota jata hai."]
+      }
+    },
+    {
+      "intent": "deep_learning",
+      "en": {
+        "patterns": ["what is deep learning", "explain deep learning", "define deep learning", "what is dl"],
+        "responses": ["Deep Learning is a part of Machine Learning that uses multi-layer neural networks to learn complex patterns."]
+      },
+      "hi": {
+        "patterns": ["deep learning kya hai", "deep learning explain karo", "dl kya hai"],
+        "responses": ["Deep Learning, Machine Learning ka hissa hai jisme multi-layer neural networks se complex patterns seekhe jate hain."]
+      }
+    },
+    {
+      "intent": "nlp",
+      "en": {
+        "patterns": ["what is nlp", "what is natural language processing", "explain nlp", "define nlp"],
+        "responses": ["NLP (Natural Language Processing) helps computers understand, interpret and generate human language."]
+      },
+      "hi": {
+        "patterns": ["nlp kya hai", "natural language processing kya hai", "nlp explain karo"],
+        "responses": ["NLP (Natural Language Processing) computers ko insani bhasha samajhne aur generate karne me madad karta hai."]
+      }
+    },
+    {
+      "intent": "chatbot",
+      "en": {
+        "patterns": ["what is a chatbot", "what is chatbot", "explain chatbot", "how does a chatbot work"],
+        "responses": ["A chatbot is a program that talks with users through text or voice. A rule-based chatbot replies using predefined patterns and responses."]
+      },
+      "hi": {
+        "patterns": ["chatbot kya hai", "chatbot kaise kaam karta hai", "bot kya hota hai"],
+        "responses": ["Chatbot ek program hai jo text ya voice se users se baat karta hai. Rule-based chatbot predefined patterns se jawab deta hai."]
+      }
+    },
+    {
+      "intent": "python",
+      "en": {
+        "patterns": ["what is python", "tell me about python", "why is python popular", "what can python do"],
+        "responses": ["Python is a beginner-friendly, high-level programming language widely used in AI, data science and web development."]
+      },
+      "hi": {
+        "patterns": ["python kya hai", "python language kya hai", "python kyu popular hai", "python se kya kya ho sakta hai"],
+        "responses": ["Python ek easy aur powerful programming language hai jo AI, data science aur web development me bahut use hoti hai."]
+      }
+    },
+    {
+      "intent": "internet",
+      "en": {
+        "patterns": ["what is internet", "what is the internet", "explain internet"],
+        "responses": ["The internet is a global network of connected computers that share information."]
+      },
+      "hi": {
+        "patterns": ["internet kya hai", "internet kya hota hai"],
+        "responses": ["Internet duniya bhar ke connected computers ka network hai jo aapas me information share karte hain."]
+      }
+    },
+    {
+      "intent": "computer",
+      "en": {
+        "patterns": ["what is computer", "what is a computer", "define computer"],
+        "responses": ["A computer is an electronic device that takes input, processes data and gives output."]
+      },
+      "hi": {
+        "patterns": ["computer kya hai", "computer kya hota hai"],
+        "responses": ["Computer ek electronic device hai jo input leta hai, data process karta hai aur output deta hai."]
+      }
+    },
+    {
+      "intent": "capital_india",
+      "en": {
+        "patterns": ["what is the capital of india", "capital of india", "india capital"],
+        "responses": ["The capital of India is New Delhi."]
+      },
+      "hi": {
+        "patterns": ["bharat ki rajdhani kya hai", "india ki rajdhani kya hai", "bharat ki rajdhani"],
+        "responses": ["Bharat ki rajdhani New Delhi hai."]
+      }
+    },
+    {
+      "intent": "national_animal",
+      "en": {
+        "patterns": ["what is the national animal of india", "national animal of india"],
+        "responses": ["The national animal of India is the Bengal Tiger."]
+      },
+      "hi": {
+        "patterns": ["bharat ka rashtriya pashu kya hai", "rashtriya pashu kaun sa hai"],
+        "responses": ["Bharat ka rashtriya pashu Bengal Tiger (bagh) hai."]
+      }
+    },
+    {
+      "intent": "national_bird",
+      "en": {
+        "patterns": ["what is the national bird of india", "national bird of india"],
+        "responses": ["The national bird of India is the Indian Peacock."]
+      },
+      "hi": {
+        "patterns": ["bharat ka rashtriya pakshi kya hai", "rashtriya pakshi kaun sa hai"],
+        "responses": ["Bharat ka rashtriya pakshi mor (peacock) hai."]
+      }
+    },
+    {
+      "intent": "father_of_nation",
+      "en": {
+        "patterns": ["who is the father of the nation", "father of the nation of india", "who is called father of nation"],
+        "responses": ["Mahatma Gandhi is called the Father of the Nation in India."]
+      },
+      "hi": {
+        "patterns": ["rashtrapita kaun hai", "bharat ke rashtrapita kaun hain", "rashtra pita kaun hai"],
+        "responses": ["Mahatma Gandhi ko Bharat ka Rashtrapita kaha jata hai."]
+      }
+    },
+    {
+      "intent": "taj_mahal",
+      "en": {
+        "patterns": ["who built the taj mahal", "where is the taj mahal", "tell me about taj mahal"],
+        "responses": ["The Taj Mahal in Agra was built by Mughal emperor Shah Jahan in memory of his wife Mumtaz Mahal."]
+      },
+      "hi": {
+        "patterns": ["taj mahal kisne banwaya", "taj mahal kahan hai", "taj mahal ke baare me batao"],
+        "responses": ["Taj Mahal Agra me hai, jise Mughal badshah Shah Jahan ne apni begum Mumtaz Mahal ki yaad me banwaya tha."]
+      }
+    },
+    {
+      "intent": "largest_planet",
+      "en": {
+        "patterns": ["which is the largest planet", "largest planet", "biggest planet"],
+        "responses": ["Jupiter is the largest planet in our solar system."]
+      },
+      "hi": {
+        "patterns": ["sabse bada grah kaun sa hai", "sabse bada planet kaun sa hai"],
+        "responses": ["Hamare saur mandal ka sabse bada grah Jupiter (brihaspati) hai."]
+      }
+    },
+    {
+      "intent": "red_planet",
+      "en": {
+        "patterns": ["which planet is called the red planet", "red planet", "which is the red planet"],
+        "responses": ["Mars is called the Red Planet."]
+      },
+      "hi": {
+        "patterns": ["lal grah kaun sa hai", "red planet kaun sa hai", "kis grah ko lal grah kehte hain"],
+        "responses": ["Mars (mangal) ko Lal Grah kaha jata hai."]
+      }
+    },
+    {
+      "intent": "number_of_planets",
+      "en": {
+        "patterns": ["how many planets are there", "number of planets", "how many planets in solar system"],
+        "responses": ["There are 8 planets in our solar system."]
+      },
+      "hi": {
+        "patterns": ["kitne grah hain", "saur mandal me kitne grah hain", "grahon ki sankhya kitni hai"],
+        "responses": ["Hamare saur mandal me 8 grah hain."]
+      }
+    },
+    {
+      "intent": "days_in_year",
+      "en": {
+        "patterns": ["how many days in a year", "days in a year", "how many days are there in a year"],
+        "responses": ["A year has 365 days, and 366 in a leap year."]
+      },
+      "hi": {
+        "patterns": ["ek saal me kitne din hote hain", "saal me kitne din hote hain"],
+        "responses": ["Ek saal me 365 din hote hain, aur leap year me 366."]
+      }
+    },
+    {
+      "intent": "largest_ocean",
+      "en": {
+        "patterns": ["which is the largest ocean", "largest ocean", "biggest ocean"],
+        "responses": ["The Pacific Ocean is the largest ocean on Earth."]
+      },
+      "hi": {
+        "patterns": ["sabse bada mahasagar kaun sa hai", "sabse bada samundar kaun sa hai"],
+        "responses": ["Prashant Mahasagar (Pacific Ocean) duniya ka sabse bada mahasagar hai."]
+      }
+    },
+    {
+      "intent": "tallest_mountain",
+      "en": {
+        "patterns": ["which is the tallest mountain", "highest mountain in the world", "tallest mountain"],
+        "responses": ["Mount Everest is the tallest mountain above sea level."]
+      },
+      "hi": {
+        "patterns": ["sabse unchi choti kaun si hai", "sabse uncha parvat kaun sa hai"],
+        "responses": ["Mount Everest duniya ki sabse unchi choti hai."]
+      }
+    },
+    {
+      "intent": "unknown",
+      "en": {
+        "patterns": [],
+        "responses": ["Sorry, I don't understand that yet. Please try asking in a different way.", "I don't have an answer for that yet. Try asking something else!"]
+      },
+      "hi": {
+        "patterns": [],
+        "responses": ["Maaf kijiye, mujhe ye abhi samajh nahi aaya. Doosre tareeke se poochiye.", "Iska jawab mere paas abhi nahi hai. Kuch aur poochiye!"]
+      }
+    }
+  ]
+}
